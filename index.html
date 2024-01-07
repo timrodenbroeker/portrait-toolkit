@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="gui-left">
+            <details> <!-- Details Inner -->
+                
+                <summary>Resolution</summary>
+                
+                <div class="details-inner">
+                    <div class="component">
+                        <label>tilesX</label>
+                        <input id="sliderTilesX" type="range" min="2" max="100" value="25">
+                    </div>
+
+                    <div class="component">
+                        <label>tilesY</label>
+                        <input id="sliderTilesY" type="range" min="2" max="100" value="25">
+                    </div>
+
+                </div> <!-- // Details Inner -->
+
+            </details>
+            <details> <!-- Details Inner -->
+                
+                <summary>Color</summary>
+                
+                <div class="details-inner">
+                    <div class="component">
+                        <label>Color Theme</label>
+                        <select id="colorTheme">
+                            <option value="forest">Forest</option>
+                            <option value="sea">Sea</option>
+                            <option value="sky">Sky</option>
+                        </select>
+                    </div>
+                </div> <!-- // Details Inner -->
+
+            </details>
+
+        </div>
+        <div id="artboard">
+            
+        </div>
+        <div id="gui-right">
+            <div class="component">
+                <button id="save">save</button>
+            </div>     
+        </div>
+    </div>
+<script src="https://unpkg.com/p5@1.9.0/lib/p5.min.js"></script>
+<script src="./app.js"></script>
+</body>
